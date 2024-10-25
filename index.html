@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+    <header>
+        <img src="./images/logo.png" alt="Logo da Empresa">
+    </header>
+
+
+    
+        <main>
+            <div id="container">
+                <span>Voltar</span>
+                <h1>Compras da Semana</h1>
+
+                <form action="">
+                    <input type="text" placeholder="Adicione um novo item" id="add" required>
+
+                    <button type="submit" id="btnSubmit">Adicionar um item</button>
+                </form>
+
+                <ul id="itens">
+                    <li class="itens-list grid grid-3">
+                        <img src="./images/state=Default.svg" alt="Cirulo para o check" id="circle">
+                        <h2 id="title-buy">Pão de Forma</h2>
+                        <img src="./images/icon delete.svg" alt="" id="icon-delete">
+                    </li>
+                </ul>
+
+                <div class="removeAlert grid grid-3 disableAlert" id="alert">
+                    <img src="./images/Iconalert.svg" alt="Icone de Alerta" id="imgAlert">
+                    <p>O item foi removido da lista</p>
+                    <img src="./images/Iconx.svg" alt="" id="imgDel">
+                </div>
+
+            </div>
+        </main>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

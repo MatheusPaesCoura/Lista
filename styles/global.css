@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: var(--background-primary);
+}
+
+:root{
+    /*CORES*/   
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+    
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #C93847;
+   
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    
+    --border-primary: #D1D5DB;
+    --border-hover: #B9C2D0;
+
+    /*TIPOGRAFIA  font-family: "Inter", sans-serif;*/
+    --inter: "Inter", sans-serif;
+    --title: bold 1.5rem/2rem var(--inter);
+    --label: 1rem/1.25rem var(--inter);
+    --paragraph: medium 1rem/1.25rem var(--inter);
+    --link: medium 0.875rem/1rem var(--inter);
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    max-width: 627px;
+    flex-grow: 1;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    & span{
+        font: 500 14px/16px var(--inter);
+        color: var(--color-brand);
+    }
+
+    & h1{
+        font: var(--title);
+        color: var(--content-primary);
+        
+    }
+
+
+
+    & .itens-list{
+        
+        
+        width: 100%;
+        margin-top: 10px;
+        padding: 5px;
+
+        background-color: var(--background-secondary);
+        border-radius: 12px;
+    }
+
+    & .itens-list h2{
+        font: 500 16px/24px var(--inter);
+        margin-block: auto;
+        background-color: var(--background-secondary);
+    }
+
+    & .itens-list img{
+        background-color: var(--background-secondary);
+        cursor: pointer;
+    }
+
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-3{
+    grid-template-columns: 5% 85% 10%;
+    gap: 8px;
+}
+
+#circle{
+    /* checkbox */
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.disableAlert{
+    display: none;
+}
+
+.removeAlert{
+    
+    margin-top: 15px;
+    border: none;
+    background-color: var(--color-danger);
+    border-radius: 12px;
+    height: 44px;
+    padding: 12px;
+    transition: opacity 0.5s ease;
+
+    & img{
+        background-color: var(--color-danger);
+    }
+    & p{
+        background-color: var(--color-danger);
+        font: var(--label);
+        color: #FFFFFF;
+    }
+
+    & #imgAlert{
+        width: 18.68px;
+        height: 18.67px;
+    }
+
+    & #imgDel{
+        width: 13px;
+        height: 13px;
+        margin: auto;
+        cursor: pointer;
+        
+        
+    }
+}
+
+
+

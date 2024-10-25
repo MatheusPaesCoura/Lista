@@ -1,0 +1,39 @@
+@import url(./global.css);
+
+form{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+    
+
+    & button{
+        width: 160px;
+        height: 44px;
+        
+        font: var(--label);
+        color: var(--background-secondary);
+
+        background-color: var(--color-brand);
+        border: none;
+        border-radius: 12px;
+
+        cursor: pointer;
+
+    }
+    
+}
+
+input{
+    width: 451px;
+    height: 44px;
+    border: solid 2px var(--border-primary);
+    border-radius: 12px;
+    padding-left: 10px; 
+}
+
+input::placeholder{
+        font: var(--label);
+        color: var(--content-tertiary);
+        padding-left: 10px; 
+}
+
